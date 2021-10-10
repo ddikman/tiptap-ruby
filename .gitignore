@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
-/dist
+
+# Allow us to commit the example
+#/dist
 
 
 # local env files
