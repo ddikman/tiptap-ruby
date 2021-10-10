@@ -1,24 +1,15 @@
 # tiptap-ruby
 
-## Project setup
-```
-npm install
-```
+This project is an example of how to enable support for the `<ruby>` html tag in [TipTap](https://tiptap.dev/).
 
-### Compiles and hot-reloads for development
+## Run
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Example
 
-### Lints and fixes files
-```
-npm run lint
-```
+The component binds `Mod+u`, for example `CMD+u` key to add a ruby tag. Once added, you can use the editor to modify the furigana as you would expect.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Example of this in use](./example.gif)

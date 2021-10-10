@@ -82,7 +82,7 @@ export default defineComponent({
   },
   mounted() {
     this.editor = new Editor({
-      content: '<p>I’m running <ruby><span>未定</span><rt>みてい</rt></ruby> with Vue.js. 🎉</p><pre><code>test</code></pre>',
+      content: '<p>これは振り仮名の例です</p>',
       extensions: [
         StarterKit,
         Ruby,
