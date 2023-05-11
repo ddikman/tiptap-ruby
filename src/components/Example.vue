@@ -87,7 +87,7 @@ export default defineComponent({
   },
   mounted() {
     this.editor = new Editor({
-      content: '<p>これは振り仮名の例です</p>',
+      content: '<p>これは振り仮名の<ruby>例<rt>れい</rt></ruby>です</p>',
       extensions: [
         StarterKit,
         Ruby,
