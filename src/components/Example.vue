@@ -62,7 +62,12 @@ export const Ruby = Mark.create<any>({
       addRuby: () => ({ commands, editor }) => {
         const { from, to } = editor.state.selection;
         const text = editor.state.doc.textBetween(from, to, ' ');
-        return commands.insertContent(`<ruby>${text}<rt>???</rt></ruby>`);
+        const placeholder = '???';
+        const replacement = `<ruby>${text}<rt>${placeholder}</rt></ruby>`;
+        commands.insertContent(replacement);
+
+        // set selection on new furigana (which follows the text)
+        return commands.setTextSelection({ from: to, to: to + placeholder.length });
       },
     };
   },
