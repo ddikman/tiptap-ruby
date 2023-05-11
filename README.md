@@ -2,6 +2,8 @@
 
 This project is an example of how to enable support for the `<ruby>` html tag in [TipTap](https://tiptap.dev/).
 
+Try it live at [https://ddikman.github.io/tiptap-ruby/](https://ddikman.github.io/tiptap-ruby/)
+
 ## Run
 
 ```
